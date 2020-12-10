@@ -11,8 +11,6 @@ namespace LeitorDeNumeros
     {
         static void Main(string[] args)
         {
-            
-
             Console.WriteLine("Quantos produtos você quer ler?");
             int qtdProdutos = int.Parse(Console.ReadLine());
 
@@ -23,9 +21,8 @@ namespace LeitorDeNumeros
                 Console.WriteLine("Digite o nome do " + (i + 1) + "º produto");
                 string nome = Console.ReadLine();
 
-                Console.WriteLine("Digite o preco do(a) " + nome);
                 Console.WriteLine("Digite o preco do(a) {0}", nome);
-                Console.WriteLine($"Digite o preco do(a) {nome}");
+
                 double preco = double.Parse(Console.ReadLine());
 
                 Produto produto = new Produto(nome, preco);
